@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijava zaposlenog</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            background-color: #e6eef5;
+            color: #333;
+        }
+        header {
+            background-color: #1f3a5f;
+            color: #fff;
+            padding: 25px 0;
+            text-align: center;
+        }
+        .prijava {
+            max-width: 420px;
+            margin: 60px auto;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 6px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        .prijava h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #1f3a5f;
+        }
+        .prijava label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .prijava input {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 18px;
+            border: 1px solid #bbb;
+            border-radius: 4px;
+        }
+        .prijava button {
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #1f7a8c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .prijava button:hover {
+            background-color: #145a66;
+        }
+        .link {
+            text-align: center;
+            margin-top: 12px;
+        }
+        .link a {
+            color: #1f3a5f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Turistička agencija</h1>
+    <p>Interni sistem – prijava zaposlenog</p>
+</header>
+
+<div class="prijava">
+    <h2>Prijavite se</h2>
+
+    <form action="prijava.php" method="post">
+        <label>Email:</label>
+        <input type="email" name="email_zaposleni" required>
+
+        <label>Lozinka:</label>
+        <input type="password" name="lozinka_zaposleni" required>
+
+        <button type="submit">Prijavi se</button>
+    </form>
+
+    <div class="link">
+        <a href="registracijaa.html">Registracija zaposlenog</a>
+    </div>
+</div>
+
+</body>
+</html>

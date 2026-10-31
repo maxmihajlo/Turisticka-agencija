@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registracija zaposlenog</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            background-color: #e6eef5;
+            color: #333;
+        }
+        header {
+            background-color: #1f3a5f;
+            color: #fff;
+            padding: 25px 0;
+            text-align: center;
+        }
+        .registracijaa {
+            max-width: 420px;
+            margin: 50px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 6px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        .registracijaa h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #1f3a5f;
+        }
+        .registracijaa label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .registracijaa input {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #bbb;
+            border-radius: 4px;
+        }
+        .pol {
+            margin-bottom: 15px;
+        }
+        .pol label {
+            font-weight: normal;
+            margin-right: 15px;
+        }
+        .registracijaa button {
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #1f7a8c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .registracijaa button:hover {
+            background-color: #145a66;
+        }
+        .msg {
+            background: #fff3cd;
+            border: 1px solid #ffeeba;
+            color: #856404;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .link {
+            text-align: center;
+            margin-top: 12px;
+        }
+        .link a {
+            color: #1f3a5f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Turistička agencija</h1>
+    <p>Registracija zaposlenog</p>
+</header>
+
+<div class="registracijaa">
+    <h2>Kreiranje naloga</h2>
+
+    <script>
+    </script>
+
+    <form action="registracijaa.php" method="post">
+
+        <label>Ime:</label>
+        <input type="text" name="ime_zaposleni" required>
+
+        <label>Prezime:</label>
+        <input type="text" name="prezime_zaposleni" required>
+
+        <label>Pol:</label>
+        <div class="pol">
+            <label><input type="radio" name="pol_zaposleni" value="muski" required> Muški</label>
+            <label><input type="radio" name="pol_zaposleni" value="zenski" required> Ženski</label>
+        </div>
+
+        <label>Email:</label>
+        <input type="email" name="email_zaposleni" required autocomplete="email">
+
+        <label>Lozinka:</label>
+        <input type="password" name="lozinka_zaposleni" required>
+
+        <button type="submit">Registruj se</button>
+    </form>
+
+    <div class="link">
+        <a href="prijava.html">Već imate nalog? Prijavite se</a>
+    </div>
+</div>
+
+</body>
+</html>
